@@ -1,0 +1,147 @@
+<div class="body">
+    <mat-card>
+        <div class="col-25">
+            <button type="button" (click)=" CreateDrawerRelease()" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="dark">Execute</button>
+            <button type="button" (click)=" DataGet()" class="btn btn-outline-secondary btn-rounded" data-mdb-ripple-color="dark">Search</button>
+            <button type="button" (click)=" UpdateDrawerRelease()" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark">Update</button>
+            <button type="button" (click)="ClearPage()" class="btn btn-outline-warning btn-rounded" data-mdb-ripple-color="dark">Clear</button>
+        </div>
+    
+        <mat-card-content [formGroup]="formValue">
+            <div class="test">
+                <div align=right class="col-50">
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Locker ID</mat-label>
+                            <input matInput  formControlName="lckrid" id="lckrid">
+                        </mat-form-field>
+                    </div>
+    
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Drawer ID</mat-label>
+                            <input matInput formControlName="drwrid" id="drwrid">
+                        </mat-form-field>
+                    </div>           
+    
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>A/C Number</mat-label>
+                            <input matInput  formControlName="actnum" id="actnum">
+                        </mat-form-field>
+                    </div>
+                    
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>A/C Title</mat-label>
+                            <input matInput  formControlName="remarks" id="remarks">
+                        </mat-form-field>
+                    </div> 
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Deposit Product</mat-label>
+                            <input matInput  formControlName="address1" id="address1">
+                        </mat-form-field>
+                    </div>
+    
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>For Sale Value</mat-label>
+                            <input matInput formControlName="saleval" id="saleval">
+                        </mat-form-field>
+                    </div>
+    
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Market Value</mat-label>
+                            <input matInput  formControlName="marketval" id="marketval">
+                        </mat-form-field>
+                    </div>   
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Caution Money</mat-label>
+                            <input matInput  formControlName="cautionamt" id="cautionamt">
+                        </mat-form-field>
+                    </div>
+    
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Remarks</mat-label>
+                            <input matInput  formControlName="remarks" id="remarks">
+                        </mat-form-field>
+                    </div>  
+                </div>  
+                
+                <div align=right class="col-50">
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Customer Type</mat-label>
+                            <input matInput style="width: 60px;">
+                        </mat-form-field>
+                    </div>
+    
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Customer Name</mat-label>
+                            <input matInput >
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Address1</mat-label>
+                            <input matInput  formControlName="address1" id="address1">
+                        </mat-form-field>
+                    </div> 
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Address2</mat-label>
+                            <input matInput  formControlName="address2" id="address2">
+                        </mat-form-field>
+                    </div> 
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>House</mat-label>
+                            <input matInput >
+                        </mat-form-field>
+                    </div> 
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>City Name</mat-label>
+                            <input matInput >
+                        </mat-form-field>
+                    </div> 
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Phone No</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div> 
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Allocation Date</mat-label>
+                            <input type="date" matInput >
+                        </mat-form-field>
+                    </div> 
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Expire Date</mat-label>
+                            <input type="date" matInput >
+                        </mat-form-field>
+                    </div> 
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Payment Status</mat-label>
+                            <input matInput >
+                        </mat-form-field>
+                    </div> 
+                    <div>
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Due Payment</mat-label>
+                            <input matInput >
+                        </mat-form-field>
+                    </div> 
+                </div>   
+            </div>             
+        </mat-card-content>
+    </mat-card>
+</div>

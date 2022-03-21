@@ -1,0 +1,66 @@
+<div class="body">
+    <mat-card>
+        <div class="col-25">
+            <button type="button" (click)=" CreateVendor()" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="dark">Execute</button>
+            <button type="button" (click)=" DataGet()" class="btn btn-outline-secondary btn-rounded" data-mdb-ripple-color="dark">Search</button>
+            <button type="button" (click)=" UpdateVendorInfo()" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark">Update</button>
+            <button type="button" (click)="ClearPage()" class="btn btn-outline-warning btn-rounded" data-mdb-ripple-color="dark">Clear</button>
+        </div>
+    
+        <mat-card-content [formGroup]="formValue">
+            <div align=right class="col-50">
+                <div>
+                    <mat-form-field appearance="fill" appearance="outline">
+                        <mat-label>Vendor ID</mat-label>
+                        <input matInput  formControlName="vencod" id="vencod">
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field appearance="fill" appearance="outline">
+                        <mat-label>Vendor Name</mat-label>
+                        <input matInput formControlName="ventit" id="ventit">
+                    </mat-form-field>
+                </div>           
+
+                <div>
+                    <mat-form-field appearance="fill" appearance="outline">
+                        <mat-label>Country</mat-label>
+                        <input matInput  formControlName="vencountry" id="vencountry">
+                    </mat-form-field>
+                </div>
+                
+                <div>
+                    <mat-form-field appearance="fill" appearance="outline">
+                        <mat-label>Remarks</mat-label>
+                        <input matInput  formControlName="remarks" id="remarks">
+                    </mat-form-field>
+                </div>   
+            </div>  
+            
+            <div align=right class="col-50">
+                <div>
+                    <mat-form-field appearance="fill" appearance="outline">
+                        <mat-label>Address1</mat-label>
+                        <input matInput  formControlName="address1" id="address1">
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field appearance="fill" appearance="outline">
+                        <mat-label>Address2</mat-label>
+                        <input matInput formControlName="address2" id="address2">
+                    </mat-form-field>
+                </div>
+            
+
+                <div>
+                    <mat-form-field appearance="fill" appearance="outline">
+                        <mat-label>Address3</mat-label>
+                        <input matInput  formControlName="address3" id="address3">
+                    </mat-form-field>
+                </div> 
+            </div>     
+        </mat-card-content>
+    </mat-card>
+</div>

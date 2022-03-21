@@ -1,0 +1,52 @@
+.body{
+    margin-top: 160px;
+}
+.mat-card{
+    height: 350px;
+    margin: 20px 20px 20px 20px;
+}
+mat-card-content{
+    margin-top: 50px;
+    
+}
+
+.col-25{
+    float: right;
+    height: 25px;
+}
+
+.col-50{
+    width: 450px;
+    float: left;
+    /* margin-top: 25px; */
+}
+
+mat-form-field{
+    /* margin-left: 10px; */
+    width: 350px;
+    /* height: 5px; */
+    /* margin-top: 15px;
+    padding-bottom: 10px; */
+    font-size: 14px;
+    /* padding-right: 50px; */
+}
+
+mat-level{
+    font-size: 18px;
+}
+
+mat-raised-button{
+    font-size: 10px;
+    padding-left: 20px;
+}
+
+mat-toolbar{
+    margin-top: 10px;
+}
+
+.footer{
+    margin-top: 10px;
+    background-color: limegreen;
+}
+
+
