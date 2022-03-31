@@ -163,19 +163,18 @@ export class ApiService {
   }
 
 
-  // Drawer Management Info API
+
   GetDrawerManagements(){
     return this.http.get(this.API_URL+'/GetDrawerManagements');   
   }
 
 
-  // Drawer Allocation Info API
+  
   GetDrawerAllocationByAccountNo(id : string){
     return this.http.get(this.API_URL+'/'+id);   
   }
 
-  //Drawer Release Info Api
-
+ 
   CreateDrawerRelease(data:any){
     return this.http.post<any>(this.API_URL+'/AddDrawerRelease', data)
       .pipe(map((res:any)=> {
